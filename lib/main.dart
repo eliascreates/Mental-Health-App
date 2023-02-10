@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         iconTheme: const IconThemeData(color: Colors.white),
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: Colors.white),
+        //textTheme: Theme.of(context).textTheme.apply(bodyColor: Colors.white),
       ),
       home: HomePage(),
     );

@@ -17,7 +17,12 @@ class SearchBar extends StatelessWidget {
           SizedBox(
             width: 5,
           ),
-          Text('Search'),
+          Text(
+            'Search',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );

@@ -29,7 +29,9 @@ class Emoji extends StatelessWidget {
         Text(
           emojiText,
           style: const TextStyle(
+            color: Colors.white,
             fontSize: 14,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ],
