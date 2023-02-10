@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+
+//Custom Widgets
 import '../customWidgets/search_bar.dart';
+import '../customWidgets/emoji_with_text_widget.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+
+  final Map<String, String> emotions = {
+    'Badly': '😞',
+    'Fine': '😊',
+    'Well': '😁',
+    'Excellent': '😃',
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +65,35 @@ class HomePage extends StatelessWidget {
               ),
               //Search Bar
               const SearchBar(),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    'How do you feel?',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(Icons.more_horiz),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  for (var text in emotions.keys)
+                    Emoji(
+                      emoji: emotions[text] ?? '😪',
+                      emojiText: text,
+                    ),
+                ],
+              ),
             ],
           ),
         ),

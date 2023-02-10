@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         textTheme: Theme.of(context).textTheme.apply(bodyColor: Colors.white),
       ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
