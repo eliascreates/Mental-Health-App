@@ -1,6 +1,6 @@
 # mentalhealthapp
 
-A new Flutter project.
+A mental health app clone using Flutter.
 
 ## Getting Started
 
